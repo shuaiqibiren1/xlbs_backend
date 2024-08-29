@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/big_event
+    username: root
+    password: 123456
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    
+server:
+  port: 8080
+  tomcat:
+    connection-timeout: 20000ms  # 设置连接超时为 20 秒
+    max-swallow-size: -1
+
+file:
+  upload-dir: D:\\spring-boot-projects\\datastore\\
+
+python:
+  interpreter: E:\\Anaconda3\\envs\\seganything\\python.exe
+
+okhttp:
+  connect-timeout: 30
+  read-timeout: 30
+  write-timeout: 30
+  max-idle-connections: 200
+  keep-alive-duration: 300
+
+# wenxin:
+#   apiKey: 
+#   secretKey: 
+#   accessTokenUrl: https://aip.baidubce.com/oauth/2.0/token
+#   ERNIE-Bot4:
+#     0URL: https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-lite-8k
